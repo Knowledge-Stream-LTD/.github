@@ -1,0 +1,59 @@
+name: ✨ Feature Request
+description: Suggest a new feature or improvement
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Feature Request
+        Describe the feature you'd like to see.
+
+  - type: input
+    id: client
+    attributes:
+      label: Client / Project
+      description: Which client or project is this for?
+      placeholder: "e.g., Amdocs, Albek, Internal"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What do you want?
+      description: Describe the feature clearly
+      placeholder: "As a user, I want to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why is this needed?
+      description: What problem does this solve?
+      placeholder: "Currently we have to manually..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How do we know this is done?
+      placeholder: |
+        - [ ] User can...
+        - [ ] System shows...
+        - [ ] Data is saved to...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - High (blocking other work)
+        - Medium (important but not urgent)
+        - Low (nice to have)
+    validations:
+      required: true

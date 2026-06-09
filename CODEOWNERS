@@ -1,0 +1,5 @@
+# Default reviewer for everything
+* @Knowledge-Stream-LTD/admins
+
+# DevOps files
+.github/ @Knowledge-Stream-LTD/admins

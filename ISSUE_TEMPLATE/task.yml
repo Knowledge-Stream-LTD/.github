@@ -1,0 +1,63 @@
+name: 📋 Task
+description: Create a work item or task
+labels: ["task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Task
+        Describe the work that needs to be done.
+
+  - type: input
+    id: client
+    attributes:
+      label: Client / Project
+      description: Which client or project?
+      placeholder: "e.g., Amdocs, Albek, Internal"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Task description
+      description: What needs to be done?
+      placeholder: "Create a new API endpoint that..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements / Details
+      description: Any specific requirements or constraints?
+      placeholder: |
+        - Must use existing auth module
+        - Response format should be JSON
+        - Deploy to staging first
+    validations:
+      required: false
+
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of Done
+      description: How do we know this task is complete?
+      placeholder: |
+        - [ ] Code written and tested
+        - [ ] PR reviewed and merged
+        - [ ] Deployed to staging
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
