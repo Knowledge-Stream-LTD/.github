@@ -29,4 +29,4 @@ Fixes #
 - [ ] No console.log / debug code left
 - [ ] PR title is descriptive
 - [ ] Related issue is linked
-- [ ] No sensitive data (keys, tokens, passwords) committed
+- [ ] No sensitive data (keys, tokens, passwords) committed.
